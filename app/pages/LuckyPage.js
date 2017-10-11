@@ -10,18 +10,18 @@ import {
     Image,
 } from 'react-native';
 
-class Mine extends Component{
+class Lucky extends Component{
     constructor(props){
         super(props);
 
     }
     render(){
         return(
-           <View style={styles.container}>
-               <Text>
-                   这是我的页面
-               </Text>
-           </View>
+            <View style={styles.container}>
+                <Text>
+                    这是喜得的页面
+                </Text>
+            </View>
         )
     }
 }
@@ -34,5 +34,8 @@ const styles = StyleSheet.create({
     },
 });
 
-module.exports=Mine;
-
+export const LayoutComponent=Lucky;
+export function mapStateToProps(state) {
+    return{
+    }
+}

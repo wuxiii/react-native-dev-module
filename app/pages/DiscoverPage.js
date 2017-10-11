@@ -10,7 +10,7 @@ import {
     Image,
 } from 'react-native';
 
-class Lucky extends Component{
+class Discover extends Component{
     constructor(props){
         super(props);
 
@@ -19,7 +19,7 @@ class Lucky extends Component{
         return(
             <View style={styles.container}>
                 <Text>
-                    这是喜得的页面
+                    这是发现的页面
                 </Text>
             </View>
         )
@@ -34,4 +34,8 @@ const styles = StyleSheet.create({
     },
 });
 
-module.exports=Lucky;
+export const LayoutComponent=Discover;
+export function mapStateToProps(state) {
+    return{
+    }
+}

@@ -10,7 +10,7 @@ import {
     Image,
 } from 'react-native';
 
-class Discover extends Component{
+class Ernie extends Component{
     constructor(props){
         super(props);
 
@@ -19,7 +19,7 @@ class Discover extends Component{
         return(
             <View style={styles.container}>
                 <Text>
-                    这是发现的页面
+                    这是摇奖的页面
                 </Text>
             </View>
         )
@@ -34,4 +34,8 @@ const styles = StyleSheet.create({
     },
 });
 
-module.exports=Discover;
+export const LayoutComponent=Ernie;
+export function mapStateToProps(state) {
+    return{
+    }
+}

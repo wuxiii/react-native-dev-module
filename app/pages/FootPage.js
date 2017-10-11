@@ -7,10 +7,15 @@ import {
     View
 } from 'react-native';
 import TabBar from '../components/tabBar/TabBar';
-import Discover from './Discover';
-import Ernie from './Ernie'
-import Lucky from './Lucky'
-import Mine from './Mine'
+import * as DiscoverPage from './DiscoverPage';
+import * as ErniePage from './ErniePage'
+import * as LuckyPage from './LuckyPage'
+import * as MinePage from './MinePage'
+import connectComponent from '../reduxConnect/connectComponent';
+const Discover=connectComponent(DiscoverPage);
+const Lucky=connectComponent(LuckyPage);
+const Ernie=connectComponent(ErniePage);
+const Mine=connectComponent(MinePage);
 
 class Foot extends Component{
     constructor(props){
@@ -68,7 +73,7 @@ class Foot extends Component{
             </View>
         )
     }
-};
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -79,4 +84,8 @@ const styles = StyleSheet.create({
     },
 });
 
-module.exports=Foot;
+export const LayoutComponent=Foot;
+export function mapStateToProps(state) {
+    return{
+    }
+}

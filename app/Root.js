@@ -2,12 +2,21 @@
  * Created by osx on 2017/10/10.
  */
 import React,{Component} from 'react';
-import Foot from './pages/Foot'
+import * as router from './router/router'
+/**
+ * 添加redux支持
+ */
+import store from './store/store';
+import {Provider} from 'react-redux';
+import connectComponent from './reduxConnect/connectComponent';
+const App = connectComponent(router);
 
 class Root extends Component {
     render() {
         return (
-            <Foot />
+            <Provider store={store}>
+                <App />
+            </Provider>
         )
     }
 }
