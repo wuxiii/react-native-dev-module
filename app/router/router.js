@@ -10,7 +10,6 @@ import connectComponent from '../reduxConnect/connectComponent';
 const Foot=connectComponent(FootPage);
 import {setNavigator,getNavigator} from './navigatorComponent';
 
-
 class App extends Component{
     constructor(props){
         super(props);
