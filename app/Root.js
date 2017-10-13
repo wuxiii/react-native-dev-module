@@ -11,6 +11,9 @@ import {Provider} from 'react-redux';
 import connectComponent from './reduxConnect/connectComponent';
 const App = connectComponent(router);
 
+import initPrototype from './common/initPrototype'
+
+initPrototype();
 class Root extends Component {
     render() {
         return (
