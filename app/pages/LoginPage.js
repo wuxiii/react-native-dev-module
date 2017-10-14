@@ -23,7 +23,7 @@ class Login extends Component{
             <View style={styles.container}>
 
                 <View style={styles.header}>
-                    <TouchableHighlight onPress={getNavigator().pop} underlayColor={'rgb（255,80,120）'} >
+                    <TouchableHighlight onPress={getNavigator().pop}  >
                         <Text style={styles.text}>后退</Text>
                     </TouchableHighlight>
                 </View>
