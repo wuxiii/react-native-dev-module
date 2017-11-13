@@ -299,7 +299,7 @@ class AppCircleActivityContentEditView extends Component {
                             autoCorrect={false}
                             style={{height:50,fontSize:30,fontWeight:"bold",paddingLeft:windowWidth*0.025}}
                             value={this.state.title}
-                            onChange={(title)=>{this.setState({title:title})}}
+                            onChange={(title)=>{this.setState({title:title})}}//这里的title是个rn的event对象。。。。这是写的不对
                             placeholder="标题"
                         />
                         {/*<View style={{height:1,width:windowWidth*0.95,marginTop:-5,backgroundColor:"#000"}}/>*/}
